@@ -6,14 +6,29 @@
 // A function to switch between full navigation bar (large screen devices) and
 // mobile navigation (small screen devices) by clicking the hamburger icon
 
-var theLink = document.getElementById("side-nav");
-var overlay = document.getElementById("overlay");
-// var theIcon = document.getElementById("bar-icon").hasAttribute("class");
-// var changeIcon = document.getElementById("bar-icon");
+var navBar = document.getElementById("nav-bar");
+var navMobile = document.getElementById("nav-mobile");
+var mobileMenu = document.getElementById("side-nav");
+
+function w3_open() {
+  document.getElementById("nav-bar").style.display = "block";
+  document.getElementById("nav-mobile").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("nav-bar").style.display = "none";
+  document.getElementById("nav-mobile").style.display = "none";
+}
+
+function toggleNavBar() {
+    if (mobileMenu.style.display === "block") {
+
+    }
+}
 
 function mobileNav() {
 
-    if (theLink.style.display === "block") {
+    if (navBar.style.display === "block") {
         // if ()
         theLink.style.display = "none";
     }
