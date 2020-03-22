@@ -1,5 +1,5 @@
 <!-- An HTML file for ísARK Studio LLC. -->
-<!-- Author: Thannaree Charoenpokkasap -->
+<!-- Author: Thannaree Charoenpokkasap (Bow Meystel) -->
 <!-- Website: isarkstudio.com, https://thannaree.github.io/isARK/ -->
 
 <!DOCTYPE html>
@@ -9,16 +9,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta name="author" content="Thannaree Charoenpokkasap">
-    <meta name="keywords" content="Bow, Meystel, web design, photography, Thannaree, Charoenpokkasap">
-    <meta name="description" content="Bow Meystel's Personal Website">
+    <meta name="keywords" content="interior design, Tyran, architectural design, ísARK">
+    <meta name="description" content="ísARK Studio Website">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
-    <link rel="stylesheet" href="bow.css">
-    <link rel="stylesheet" href="mediaQuery.css">
+    <link rel="stylesheet" href="css/bow.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
     <link rel="stylesheet" href="css/all.css">
+
     <link rel="icon" href="image/isarklogo.jpg" type="image/gif" sizes="16x16">
-    <!--<link rel="stylesheet" type="text/css" href="w3.css">-->
-    <title>Welcome | ísARK Studio LLC</title>
+
+    <title>Welcome | ísARK Studio</title>
 </head>
 
+<body>
+    <div>
+        <!-- Header class is the home icon and the "me" text. The icon and the text are also a link to index.html -->
+   
+            <!-- A full navigation menu for large screen devices -->
+            <div class="nav-bar">
+                <a href="#services" class="button column">Services</a>
+                <a href="#works" class="button column">Our Works</a>
+                <a href="#featured" class="button column">Featured</a>
+                <a href="#about" class="button column">About</a>
+                <a href="#contact" class="button column">Contact</a>
+            </div> <!-- End of the "top" class <div> tag  for the navigation bar -->
+    
+            <!-- A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
+            when click again, the mobile menu will be disappear-->
+            <header>
+                <a href="index.html"><img class="logo-image" src="image/isarklogo.jpg">
+                    ísARK Studio</a>
+            </header>
 
-<p>Hello World</p>
+            <div class="header-bar">
+                <a href="javascript:void(0);" id="toggle-icon" onclick="mobileNav()"><span></span></a>
+            </div>
+    
+        </div> <!-- End of the "head-banner" div -->
+    
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+            id="overlay"></div>
+
+        <div class="mobile-menu" id="side-nav">
+            <a href="#services" class="button column" onclick="closeMobileNav()">Services</a>
+            <a href="#works" class="button column" onclick="closeMobileNav()">Our Works</a>
+            <a href="#featured" class="button column" onclick="closeMobileNav()">Featured</a>
+            <a href="#about" class="button column" onclick="closeMobileNav()">About</a>
+            <a href="#contact" class="button column" onclick="closeMobileNav()">Contact</a>
+        </div>
+    
+        <p>Hello World</p>
+        
+        <footer>
+            <div class="footer">
+                <p><i class="far fa-copyright"></i>
+                    <script type="text/JavaScript">
+                            document.write(new Date().getFullYear());
+                        </script>
+                    ísARK Studio LLC. All Rights Reserved.
+                </p>
+                <p class="footer-icon">
+                    <i class="fab fa-linkedin icon"><a href="https://www.linkedin.com/in/thannaree/"></a></i>
+                    <i class="fas fa-globe icon"><a href="http://bow.meys.tel"></a></i>
+                </p>
+            </div>
+        </footer>
+    
+        <!-- ICONS -->
+        <!-- <i class="fab fa-facebook-square"></i>
+        <i class="fas fa-bars"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-phone-square"></i>
+        <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-home"></i>
+        <i class="far fa-copyright"></i>
+        <i class="fab fa-html5"></i>
+        <i class="fas fa-map-marked-alt"></i>
+        <i class="fas fa-award"></i> -->
+    
+        <script src="javascript/frontEndJavascript.js"></script>
+
+    </body>
+
+</html>

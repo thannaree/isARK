@@ -1,4 +1,4 @@
-/* A stylesheet specifically the Media Query for to use on my website
+/* A Javascript file with functions use on websites I develop
    !* Author: Thannaree Charoenpokkasap
    !* Website: bow.meys.tel, thannaree.github.io, bow.meystel.com
 */
@@ -7,13 +7,14 @@
 // mobile navigation (small screen devices) by clicking the hamburger icon
 
 var theLink = document.getElementById("side-nav");
+var overlay = document.getElementById("overlay");
 // var theIcon = document.getElementById("bar-icon").hasAttribute("class");
 // var changeIcon = document.getElementById("bar-icon");
 
 function mobileNav() {
 
     if (theLink.style.display === "block") {
-        if ()
+        // if ()
         theLink.style.display = "none";
     }
 
@@ -33,6 +34,7 @@ function mobileNav() {
 // the navigation menu will be hidden
 function closeMobileNav() {
     theLink.style.display = "none";
+    overlay.style.display = "none";
 }
 
 document.querySelector("#toggle-icon").addEventListener("click", function () {
