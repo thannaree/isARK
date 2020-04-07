@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap">
     <link rel="stylesheet" href="css/bow.css">
+    <link rel="stylesheet" href="css/w3-v413.css">
     <link rel="stylesheet" href="css/mediaQuery.css">
     <link rel="stylesheet" href="css/all.css">
 
@@ -23,9 +24,12 @@
 </head>
 
 <body>
-      <!-- A full navigation menu for large screen devices -->
-        <nav class="nav-bar">
-            <a href="#home" class="bc-button bc-quarter"><img class="logo-image" src="image/isarklogo.jpg">ísARK Studio</a>
+    <div class="bc-top bc-padding bc-black">
+        <div>
+            <a href="#home"><img class="logo-image" src="image/isarklogo.jpg">ísARK Studio</a>
+        </div>
+
+        <nav class="bc-tob bc-black button nav-bar" id="nav-bar">
             <a href="#services" class="bc-button bc-quarter">Services</a>
             <a href="#works" class="bc-button bc-quarter">Our Works</a>
             <a href="#featured" class="bc-button bc-quarter">Featured</a>
@@ -34,30 +38,33 @@
         </nav>
         <!-- End of the "top" class <div> tag  for the navigation bar -->
 
-            <!-- A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
-            when click again, the mobile menu will be disappear-->
+        <div>
+            <a href="javascript:void(0);" class="menu-icon header mobile-menu" id="toggle-icon" 
+            style="cursor: pointer;" onclick="mobileNav()">
+            <i class="fas fa-bars"></i>
+            </a>
+            <!-- <div class="mobile-menu" id="side-nav"> -->
+        </div>
+    </div>
+    <!-- A full navigation menu for large screen devices -->
+    
 
+    <!-- A div that contains the hamburger icon on the right hand side. When click, mobile menu will shown, and
+    when click again, the mobile menu will be disappear-->
+    <!-- <div class="header-bar">
+        <a href="javascript:void(0);" id="toggle-icon" onclick="mobileNav()"><span></span></a>
+    </div> -->
 
-            <div class="header-bar">
-                <a href="javascript:void(0);" id="toggle-icon" onclick="mobileNav()"><span></span></a>
-            </div>
-
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-            id="overlay"></div>
-        <header>
-            <div>
-                <a href="javascript:void(0);" class="menu-icon header" onclick="mobileNav()"><i class="fas fa-bars"></i></a>
-                <div class="mobile-menu" id="side-nav">
-            </div>
-                <a href="index.html"><img class="logo-image" src="image/isarklogo.jpg">
-                    ísARK Studio
-                </a>
-                <a href="#services" class="button column" onclick="closeMobileNav()">Services</a>
-                <a href="#works" class="button column" onclick="closeMobileNav()">Our Works</a>
-                <a href="#featured" class="button column" onclick="closeMobileNav()">Featured</a>
-                <a href="#about" class="button column" onclick="closeMobileNav()">About</a>
-                <a href="#contact" class="button column" onclick="closeMobileNav()">Contact</a>
-            </div>
+        <!-- <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+            id="overlay"></div> -->
+        <header class="bc-bar-block bc-black bc-hide bc-hide-large bc-hide-medium bc-top">
+                           
+            <a href="#services" class="button column" onclick="closeMobileNav()">Services</a>
+            <a href="#works" class="button column" onclick="closeMobileNav()">Our Works</a>
+            <a href="#featured" class="button column" onclick="closeMobileNav()">Featured</a>
+            <a href="#about" class="button column" onclick="closeMobileNav()">About</a>
+            <a href="#contact" class="button column" onclick="closeMobileNav()">Contact</a>
+            <!-- </div> -->
         </header>
 
 
@@ -66,7 +73,7 @@
         </div>
 
         <footer>
-            <div class="footer">
+            <div class="bc-bottom bc-padding bc-black bc-center">
                 <p><i class="far fa-copyright"></i>
                     <script type="text/JavaScript">
                             document.write(new Date().getFullYear());

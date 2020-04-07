@@ -7,7 +7,7 @@
 
 * {
     /*font-family: "Georgia", sans-serif;*/
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Palatino', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -34,6 +34,7 @@ a {
     max-width: 100%;
     height: auto;
     width: 25px;
+    padding-right: 10px;
 }
 
 /* .logo-home-link {
@@ -163,6 +164,9 @@ a {
     transform: rotate(-45deg);
 }
 
+.tiny-padding {
+    padding-left: 10px;
+}
 /*.bar-icon {
     padding-right: 2%;
     font-size: 14px;
